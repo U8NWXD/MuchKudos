@@ -36,6 +36,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-Ok-TK2">
                                 <rect key="frame" x="25" y="612" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4R-rn-wOR"/>
+                                    <action selector="cancelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MbM-EL-xgN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIG-CC-pxg">
                                 <rect key="frame" x="130" y="89" width="220" height="30"/>
@@ -52,6 +56,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RoY-gF-AF7" firstAttribute="leading" secondItem="f1C-Ok-TK2" secondAttribute="trailing" constant="228" id="28d-mR-924"/>
                             <constraint firstItem="gNI-z2-C9x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="2sq-Dj-1G4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f1C-Ok-TK2" secondAttribute="bottom" constant="25" id="LVV-qP-Rc2"/>
                             <constraint firstItem="RoY-gF-AF7" firstAttribute="top" secondItem="gNI-z2-C9x" secondAttribute="bottom" constant="25" id="T2K-Tv-tAE"/>
@@ -73,6 +78,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="axv-rc-t1I"/>
+                    <connections>
+                        <outlet property="jals" destination="RoY-gF-AF7" id="AGr-na-tmZ"/>
+                        <outlet property="sendKudos_body" destination="svm-oF-J7m" id="TP7-l3-RkS"/>
+                        <outlet property="sendKudos_cancel" destination="f1C-Ok-TK2" id="b8l-ko-Idt"/>
+                        <outlet property="sendKudos_submit" destination="RoY-gF-AF7" id="BcH-dW-VGq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15B3D82705D52E228CE35D95 /* Pods_MuchKudos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC94A7E1D155FB348BB896FE /* Pods_MuchKudos.framework */; };
+		320B524F95DF97552F68FA7A /* Pods_MuchKudosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C773EBAF1D8342FFB9A31D /* Pods_MuchKudosTests.framework */; };
 		40E46D122038AEBD0013B15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E46D112038AEBD0013B15C /* AppDelegate.swift */; };
 		40E46D142038AEBD0013B15C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E46D132038AEBD0013B15C /* ViewController.swift */; };
 		40E46D172038AEBD0013B15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E46D152038AEBD0013B15C /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		40E46D1C2038AEBD0013B15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E46D1A2038AEBD0013B15C /* LaunchScreen.storyboard */; };
 		40E46D272038AEBE0013B15C /* MuchKudosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E46D262038AEBE0013B15C /* MuchKudosTests.swift */; };
 		40E46D322038AEBE0013B15C /* MuchKudosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E46D312038AEBE0013B15C /* MuchKudosUITests.swift */; };
+		40E46D402038BFA70013B15C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40E46D3F2038BFA70013B15C /* GoogleService-Info.plist */; };
+		B24B6CC3C7FC71C6B9AE933F /* Pods_MuchKudosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480CD2E4AEEB2327AFFC37BC /* Pods_MuchKudosUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B93BCCD31BA47F5F2AE0258 /* Pods-MuchKudosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudosTests/Pods-MuchKudosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B5D359A6263DA984791A72C /* Pods-MuchKudos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudos.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudos/Pods-MuchKudos.release.xcconfig"; sourceTree = "<group>"; };
 		40E46D0E2038AEBD0013B15C /* MuchKudos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuchKudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E46D112038AEBD0013B15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40E46D132038AEBD0013B15C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		40E46D2D2038AEBE0013B15C /* MuchKudosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuchKudosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E46D312038AEBE0013B15C /* MuchKudosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuchKudosUITests.swift; sourceTree = "<group>"; };
 		40E46D332038AEBE0013B15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E46D3F2038BFA70013B15C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		480CD2E4AEEB2327AFFC37BC /* Pods_MuchKudosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuchKudosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647A3DA02E2194333EE9B3B4 /* Pods-MuchKudosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudosUITests/Pods-MuchKudosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72C015A42DCA3989F8105826 /* Pods-MuchKudos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudos/Pods-MuchKudos.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8B7E043D90330292ABB915 /* Pods-MuchKudosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudosTests/Pods-MuchKudosTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC94A7E1D155FB348BB896FE /* Pods_MuchKudos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuchKudos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C773EBAF1D8342FFB9A31D /* Pods_MuchKudosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuchKudosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F372C494C44D36159BF4E435 /* Pods-MuchKudosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudosUITests/Pods-MuchKudosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B3D82705D52E228CE35D95 /* Pods_MuchKudos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320B524F95DF97552F68FA7A /* Pods_MuchKudosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24B6CC3C7FC71C6B9AE933F /* Pods_MuchKudosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				40E46D252038AEBE0013B15C /* MuchKudosTests */,
 				40E46D302038AEBE0013B15C /* MuchKudosUITests */,
 				40E46D0F2038AEBD0013B15C /* Products */,
+				F26199571FAE873FC10FC6EC /* Pods */,
+				BDB21E61FA63BD3E6CA0F1D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +116,7 @@
 		40E46D102038AEBD0013B15C /* MuchKudos */ = {
 			isa = PBXGroup;
 			children = (
+				40E46D3F2038BFA70013B15C /* GoogleService-Info.plist */,
 				40E46D112038AEBD0013B15C /* AppDelegate.swift */,
 				40E46D132038AEBD0013B15C /* ViewController.swift */,
 				40E46D152038AEBD0013B15C /* Main.storyboard */,
@@ -125,6 +145,29 @@
 			path = MuchKudosUITests;
 			sourceTree = "<group>";
 		};
+		BDB21E61FA63BD3E6CA0F1D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC94A7E1D155FB348BB896FE /* Pods_MuchKudos.framework */,
+				D5C773EBAF1D8342FFB9A31D /* Pods_MuchKudosTests.framework */,
+				480CD2E4AEEB2327AFFC37BC /* Pods_MuchKudosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F26199571FAE873FC10FC6EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72C015A42DCA3989F8105826 /* Pods-MuchKudos.debug.xcconfig */,
+				3B5D359A6263DA984791A72C /* Pods-MuchKudos.release.xcconfig */,
+				2B93BCCD31BA47F5F2AE0258 /* Pods-MuchKudosTests.debug.xcconfig */,
+				7F8B7E043D90330292ABB915 /* Pods-MuchKudosTests.release.xcconfig */,
+				F372C494C44D36159BF4E435 /* Pods-MuchKudosUITests.debug.xcconfig */,
+				647A3DA02E2194333EE9B3B4 /* Pods-MuchKudosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E46D362038AEBE0013B15C /* Build configuration list for PBXNativeTarget "MuchKudos" */;
 			buildPhases = (
+				EB4CDD704DDCD3D79CAB0C0C /* [CP] Check Pods Manifest.lock */,
 				40E46D0A2038AEBD0013B15C /* Sources */,
 				40E46D0B2038AEBD0013B15C /* Frameworks */,
 				40E46D0C2038AEBD0013B15C /* Resources */,
+				07230CF0BF1E2B210F4A160C /* [CP] Embed Pods Frameworks */,
+				6D4BB8E3770D4C2DCB853729 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E46D392038AEBE0013B15C /* Build configuration list for PBXNativeTarget "MuchKudosTests" */;
 			buildPhases = (
+				11A4002C867A2EB49FA0E471 /* [CP] Check Pods Manifest.lock */,
 				40E46D1E2038AEBE0013B15C /* Sources */,
 				40E46D1F2038AEBE0013B15C /* Frameworks */,
 				40E46D202038AEBE0013B15C /* Resources */,
+				B58E3928C970D8C63B89B9C2 /* [CP] Embed Pods Frameworks */,
+				58A0C178BA39B507194D6A4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E46D3C2038AEBE0013B15C /* Build configuration list for PBXNativeTarget "MuchKudosUITests" */;
 			buildPhases = (
+				0EDC37AE0ECBDD6CE60CFC87 /* [CP] Check Pods Manifest.lock */,
 				40E46D292038AEBE0013B15C /* Sources */,
 				40E46D2A2038AEBE0013B15C /* Frameworks */,
 				40E46D2B2038AEBE0013B15C /* Resources */,
+				9940B8B6B57BE23DD2CD45DB /* [CP] Embed Pods Frameworks */,
+				F9AF7221FCDB8E311BAFF912 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E46D1C2038AEBD0013B15C /* LaunchScreen.storyboard in Resources */,
+				40E46D402038BFA70013B15C /* GoogleService-Info.plist in Resources */,
 				40E46D192038AEBD0013B15C /* Assets.xcassets in Resources */,
 				40E46D172038AEBD0013B15C /* Main.storyboard in Resources */,
 			);
@@ -252,6 +305,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07230CF0BF1E2B210F4A160C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MuchKudos/Pods-MuchKudos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuchKudos/Pods-MuchKudos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EDC37AE0ECBDD6CE60CFC87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuchKudosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11A4002C867A2EB49FA0E471 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuchKudosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58A0C178BA39B507194D6A4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuchKudosTests/Pods-MuchKudosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D4BB8E3770D4C2DCB853729 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuchKudos/Pods-MuchKudos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9940B8B6B57BE23DD2CD45DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuchKudosUITests/Pods-MuchKudosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58E3928C970D8C63B89B9C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuchKudosTests/Pods-MuchKudosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4CDD704DDCD3D79CAB0C0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuchKudos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AF7221FCDB8E311BAFF912 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuchKudosUITests/Pods-MuchKudosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40E46D0A2038AEBD0013B15C /* Sources */ = {
@@ -423,6 +628,7 @@
 		};
 		40E46D372038AEBE0013B15C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C015A42DCA3989F8105826 /* Pods-MuchKudos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +644,7 @@
 		};
 		40E46D382038AEBE0013B15C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5D359A6263DA984791A72C /* Pods-MuchKudos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +660,7 @@
 		};
 		40E46D3A2038AEBE0013B15C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B93BCCD31BA47F5F2AE0258 /* Pods-MuchKudosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +677,7 @@
 		};
 		40E46D3B2038AEBE0013B15C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8B7E043D90330292ABB915 /* Pods-MuchKudosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +694,7 @@
 		};
 		40E46D3D2038AEBE0013B15C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F372C494C44D36159BF4E435 /* Pods-MuchKudosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +710,7 @@
 		};
 		40E46D3E2038AEBE0013B15C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647A3DA02E2194333EE9B3B4 /* Pods-MuchKudosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

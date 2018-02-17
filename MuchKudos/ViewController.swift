@@ -9,16 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sendKudos_body: UITextView!
+    @IBOutlet weak var sendKudos_submit: UIButton!
+    @IBOutlet weak var sendKudos_cancel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    /* Clear the text box when pressing "clear" */
+    @IBAction func cancelTapped(_ sender: UIButton) {
+        sendKudos_body.text = ""
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
