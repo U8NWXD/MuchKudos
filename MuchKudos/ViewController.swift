@@ -15,10 +15,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // SOURCE: https://stackoverflow.com/questions/32281651/how-to-dismiss-keyboard-when-touching-anywhere-outside-uitextfield-in-swift
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(gesture:)))
         self.view.addGestureRecognizer(tapGesture)
     }
     
+    // SOURCE: https://stackoverflow.com/questions/32281651/how-to-dismiss-keyboard-when-touching-anywhere-outside-uitextfield-in-swift
     @objc func tap(gesture: UITapGestureRecognizer) {
         sendKudos_body.resignFirstResponder()
     }
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
     
     /* Clear the text box when pressing "clear" */
     @IBAction func cancelTapped(_ sender: UIButton) {
+        // SOURCE: https://stackoverflow.com/questions/37084537/how-to-clear-text-field
         sendKudos_body.text = ""
     }
 
