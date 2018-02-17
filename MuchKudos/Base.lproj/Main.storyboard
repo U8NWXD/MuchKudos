@@ -25,8 +25,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svm-oF-J7m">
                                 <rect key="frame" x="41" y="169" width="293" height="378"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoY-gF-AF7">
@@ -36,6 +35,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-Ok-TK2">
                                 <rect key="frame" x="25" y="612" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MbM-EL-xgN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIG-CC-pxg">
                                 <rect key="frame" x="130" y="89" width="220" height="30"/>
@@ -52,6 +54,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RoY-gF-AF7" firstAttribute="leading" secondItem="f1C-Ok-TK2" secondAttribute="trailing" constant="228" id="28d-mR-924"/>
                             <constraint firstItem="gNI-z2-C9x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="2sq-Dj-1G4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f1C-Ok-TK2" secondAttribute="bottom" constant="25" id="LVV-qP-Rc2"/>
                             <constraint firstItem="RoY-gF-AF7" firstAttribute="top" secondItem="gNI-z2-C9x" secondAttribute="bottom" constant="25" id="T2K-Tv-tAE"/>
@@ -73,6 +76,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="axv-rc-t1I"/>
+                    <connections>
+                        <outlet property="sendKudos_body" destination="svm-oF-J7m" id="TP7-l3-RkS"/>
+                        <outlet property="sendKudos_cancel" destination="f1C-Ok-TK2" id="b8l-ko-Idt"/>
+                        <outlet property="sendKudos_submit" destination="RoY-gF-AF7" id="BcH-dW-VGq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
