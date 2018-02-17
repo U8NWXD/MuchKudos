@@ -36,7 +36,6 @@
                                 <rect key="frame" x="25" y="612" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4R-rn-wOR"/>
                                     <action selector="cancelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MbM-EL-xgN"/>
                                 </connections>
                             </button>
