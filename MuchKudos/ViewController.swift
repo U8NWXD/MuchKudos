@@ -15,8 +15,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(gesture:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
+    
+    @objc func tap(gesture: UITapGestureRecognizer) {
+        sendKudos_body.resignFirstResponder()
+    }
+    
     
     /* Clear the text box when pressing "clear" */
     @IBAction func cancelTapped(_ sender: UIButton) {
@@ -28,4 +34,3 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
