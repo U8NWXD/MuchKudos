@@ -79,7 +79,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="axv-rc-t1I"/>
                     <connections>
-                        <outlet property="jals" destination="RoY-gF-AF7" id="AGr-na-tmZ"/>
                         <outlet property="sendKudos_body" destination="svm-oF-J7m" id="TP7-l3-RkS"/>
                         <outlet property="sendKudos_cancel" destination="f1C-Ok-TK2" id="b8l-ko-Idt"/>
                         <outlet property="sendKudos_submit" destination="RoY-gF-AF7" id="BcH-dW-VGq"/>
