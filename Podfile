@@ -7,6 +7,7 @@ target 'MuchKudos' do
 
   # Pods for MuchKudos
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   target 'MuchKudosTests' do
     inherit! :search_paths
