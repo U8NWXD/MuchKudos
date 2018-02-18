@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -237,6 +238,30 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-ak-OUm">
                                 <rect key="frame" x="25" y="102" width="325" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="VYG-YF-xjU">
+                                        <rect key="frame" x="0.0" y="28" width="325" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VYG-YF-xjU" id="yZ6-4U-hTX" customClass="ExpandableCell" customModule="MuchKudos" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbu-jK-XtZ">
+                                                    <rect key="frame" x="15" y="11" width="295" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Vbu-jK-XtZ" firstAttribute="top" secondItem="yZ6-4U-hTX" secondAttribute="topMargin" id="7ZE-2k-FgZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Vbu-jK-XtZ" secondAttribute="trailing" id="JSg-Ja-A1p"/>
+                                                <constraint firstItem="Vbu-jK-XtZ" firstAttribute="bottom" secondItem="yZ6-4U-hTX" secondAttribute="bottomMargin" id="MoB-9z-R86"/>
+                                                <constraint firstItem="Vbu-jK-XtZ" firstAttribute="leading" secondItem="yZ6-4U-hTX" secondAttribute="leadingMargin" id="diD-vN-gia"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -251,7 +276,7 @@
                         <viewLayoutGuide key="safeArea" id="8SL-q8-9r9"/>
                     </view>
                     <connections>
-                        <outlet property="viewAll_table" destination="aTH-ak-OUm" id="bQ1-Se-Iv3"/>
+                        <outlet property="viewAll_table" destination="aTH-ak-OUm" id="D0Y-CT-3UC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CER-1p-Mfn" userLabel="First Responder" sceneMemberID="firstResponder"/>

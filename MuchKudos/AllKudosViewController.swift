@@ -94,7 +94,7 @@ class AllKudosViewController: UIViewController, UITableViewDelegate, UITableView
             self.viewAll_table.dataSource = self as UITableViewDataSource
             
             // Along with auto layout, these are the keys for enabling variable cell height
-            self.viewAll_table.estimatedRowHeight = 44.0
+            self.viewAll_table.estimatedRowHeight = 176.0
             self.viewAll_table.rowHeight = UITableViewAutomaticDimension
             
             self.viewAll_table.reloadData()
