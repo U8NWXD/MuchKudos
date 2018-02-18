@@ -109,6 +109,9 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoY-gF-AF7">
                                 <rect key="frame" x="301" y="612" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8i-yQ-mTH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-Ok-TK2">
                                 <rect key="frame" x="25" y="612" width="48" height="30"/>
@@ -157,6 +160,7 @@
                     <connections>
                         <outlet property="sendKudos_body" destination="svm-oF-J7m" id="TP7-l3-RkS"/>
                         <outlet property="sendKudos_cancel" destination="f1C-Ok-TK2" id="b8l-ko-Idt"/>
+                        <outlet property="sendKudos_recipient" destination="cIG-CC-pxg" id="QTp-4k-K3Z"/>
                         <outlet property="sendKudos_submit" destination="RoY-gF-AF7" id="BcH-dW-VGq"/>
                     </connections>
                 </viewController>
