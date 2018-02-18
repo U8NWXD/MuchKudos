@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // SOURCE: https://stackoverflow.com/questions/32281651/how-to-dismiss-keyboard-when-touching-anywhere-outside-uitextfield-in-swift
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(gesture:)))
         self.view.addGestureRecognizer(tapGesture)
