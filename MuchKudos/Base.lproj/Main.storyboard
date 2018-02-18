@@ -162,6 +162,13 @@
                                     <constraint firstAttribute="width" constant="100" id="aNf-CN-EH4"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytq-GR-OTd">
+                                <rect key="frame" x="137" y="612" width="101" height="30"/>
+                                <state key="normal" title="View All Kudos"/>
+                                <connections>
+                                    <action selector="viewAllTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="El2-1D-Ks6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -172,6 +179,7 @@
                             <constraint firstItem="mjM-2D-1bU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="B9H-GA-Ct3"/>
                             <constraint firstItem="oIC-yi-1Mo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="CSu-qE-gnV"/>
                             <constraint firstItem="f1C-Ok-TK2" firstAttribute="top" secondItem="svm-oF-J7m" secondAttribute="bottom" constant="15" id="Dn1-jc-Gys"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ytq-GR-OTd" secondAttribute="bottom" constant="25" id="Fvk-l7-Hu7"/>
                             <constraint firstItem="oIC-yi-1Mo" firstAttribute="leading" secondItem="tFh-1a-jwS" secondAttribute="trailing" constant="30" id="IKO-tp-N3n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svm-oF-J7m" secondAttribute="trailing" constant="25" id="JDf-J4-Gox"/>
                             <constraint firstItem="mjM-2D-1bU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Kxa-Xc-a9b"/>
@@ -183,6 +191,7 @@
                             <constraint firstItem="cIG-CC-pxg" firstAttribute="top" secondItem="tFh-1a-jwS" secondAttribute="bottom" constant="10" id="Wb3-WR-Bv8"/>
                             <constraint firstItem="svm-oF-J7m" firstAttribute="top" secondItem="cIG-CC-pxg" secondAttribute="bottom" constant="10" id="XX7-5h-AKw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f1C-Ok-TK2" secondAttribute="bottom" constant="60" id="Xh0-3H-YlZ"/>
+                            <constraint firstItem="Ytq-GR-OTd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yei-Tn-55W"/>
                             <constraint firstItem="cIG-CC-pxg" firstAttribute="top" secondItem="mjM-2D-1bU" secondAttribute="bottom" constant="10" id="YqD-7j-C0M"/>
                             <constraint firstItem="RoY-gF-AF7" firstAttribute="top" secondItem="svm-oF-J7m" secondAttribute="bottom" constant="15" id="b8e-tX-iKx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gNI-z2-C9x" secondAttribute="trailing" constant="25" id="dyb-vO-2ZQ"/>
@@ -204,6 +213,7 @@
                         <outlet property="sendKudos_cancel" destination="f1C-Ok-TK2" id="b8l-ko-Idt"/>
                         <outlet property="sendKudos_recipient" destination="cIG-CC-pxg" id="QTp-4k-K3Z"/>
                         <outlet property="sendKudos_submit" destination="RoY-gF-AF7" id="BcH-dW-VGq"/>
+                        <outlet property="sendKudos_viewAll" destination="Ytq-GR-OTd" id="zvB-d4-nKW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -213,7 +223,7 @@
         <!--All Kudos View Controller-->
         <scene sceneID="lmK-Vw-yBL">
             <objects>
-                <viewController id="hIW-jY-gbd" customClass="AllKudosViewController" customModule="MuchKudos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewAll" id="hIW-jY-gbd" customClass="AllKudosViewController" customModule="MuchKudos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qr5-eS-8hG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,24 +234,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p8Q-UH-0uq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-ak-OUm">
                                 <rect key="frame" x="25" y="102" width="325" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="p8Q-UH-0uq" firstAttribute="top" secondItem="KfH-Ao-XFu" secondAttribute="bottom" constant="25" id="GiL-zy-xc6"/>
-                            <constraint firstItem="8SL-q8-9r9" firstAttribute="trailing" secondItem="p8Q-UH-0uq" secondAttribute="trailing" constant="25" id="RBZ-3o-syX"/>
+                            <constraint firstItem="8SL-q8-9r9" firstAttribute="bottom" secondItem="aTH-ak-OUm" secondAttribute="bottom" constant="25" id="Ur9-h4-btU"/>
+                            <constraint firstItem="aTH-ak-OUm" firstAttribute="top" secondItem="KfH-Ao-XFu" secondAttribute="bottom" constant="25" id="WGm-KK-bRl"/>
                             <constraint firstItem="KfH-Ao-XFu" firstAttribute="top" secondItem="8SL-q8-9r9" secondAttribute="top" constant="25" id="Woc-g6-wp9"/>
                             <constraint firstItem="KfH-Ao-XFu" firstAttribute="centerX" secondItem="Qr5-eS-8hG" secondAttribute="centerX" id="XnR-yZ-zqN"/>
-                            <constraint firstItem="8SL-q8-9r9" firstAttribute="bottom" secondItem="p8Q-UH-0uq" secondAttribute="bottom" constant="25" id="dGZ-Ts-qeo"/>
-                            <constraint firstItem="p8Q-UH-0uq" firstAttribute="leading" secondItem="8SL-q8-9r9" secondAttribute="leading" constant="25" id="ja5-GM-cVk"/>
+                            <constraint firstItem="aTH-ak-OUm" firstAttribute="leading" secondItem="8SL-q8-9r9" secondAttribute="leading" constant="25" id="ky6-Tr-6Jv"/>
+                            <constraint firstItem="8SL-q8-9r9" firstAttribute="trailing" secondItem="aTH-ak-OUm" secondAttribute="trailing" constant="25" id="pwq-iq-dgF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8SL-q8-9r9"/>
                     </view>
                     <connections>
-                        <outlet property="allKudos_table" destination="p8Q-UH-0uq" id="K41-HE-v6V"/>
+                        <outlet property="viewAll_table" destination="aTH-ak-OUm" id="bQ1-Se-Iv3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CER-1p-Mfn" userLabel="First Responder" sceneMemberID="firstResponder"/>

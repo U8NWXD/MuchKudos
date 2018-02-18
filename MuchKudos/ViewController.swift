@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sendKudos_body: UITextView!
     @IBOutlet weak var sendKudos_submit: UIButton!
     @IBOutlet weak var sendKudos_cancel: UIButton!
+    @IBOutlet weak var sendKudos_viewAll: UIButton!
     var handle: AuthStateDidChangeListenerHandle!
     var ref: DatabaseReference!
     
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
             // TODO: Handle errors
         }
         ref = Database.database().reference()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -65,7 +67,13 @@ class ViewController: UIViewController {
     @IBAction func cancelTapped(_ sender: UIButton) {
         clearAllFields()
     }
-
+    
+    @IBAction func viewAllTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let sendKudosView = storyboard.instantiateViewController(withIdentifier: "viewAll") as UIViewController
+        self.navigationController!.pushViewController(sendKudosView, animated: false)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

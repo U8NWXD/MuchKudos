@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		15B3D82705D52E228CE35D95 /* Pods_MuchKudos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC94A7E1D155FB348BB896FE /* Pods_MuchKudos.framework */; };
 		320B524F95DF97552F68FA7A /* Pods_MuchKudosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C773EBAF1D8342FFB9A31D /* Pods_MuchKudosTests.framework */; };
+		404B16D120399F1A003B0CFC /* Kudos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404B16D020399F1A003B0CFC /* Kudos.swift */; };
 		40D30FB62039476000BC9FB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D30FB52039476000BC9FB4 /* LoginViewController.swift */; };
 		40D30FB82039887E00BC9FB4 /* AllKudosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D30FB72039887E00BC9FB4 /* AllKudosViewController.swift */; };
 		40E46D122038AEBD0013B15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E46D112038AEBD0013B15C /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		2B93BCCD31BA47F5F2AE0258 /* Pods-MuchKudosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudosTests/Pods-MuchKudosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B5D359A6263DA984791A72C /* Pods-MuchKudos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuchKudos.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuchKudos/Pods-MuchKudos.release.xcconfig"; sourceTree = "<group>"; };
+		404B16D020399F1A003B0CFC /* Kudos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kudos.swift; sourceTree = "<group>"; };
 		40D30FB52039476000BC9FB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		40D30FB72039887E00BC9FB4 /* AllKudosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKudosViewController.swift; sourceTree = "<group>"; };
 		40E46D0E2038AEBD0013B15C /* MuchKudos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuchKudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				40E46D1A2038AEBD0013B15C /* LaunchScreen.storyboard */,
 				40E46D1D2038AEBD0013B15C /* Info.plist */,
 				40D30FB72039887E00BC9FB4 /* AllKudosViewController.swift */,
+				404B16D020399F1A003B0CFC /* Kudos.swift */,
 			);
 			path = MuchKudos;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			files = (
 				40D30FB62039476000BC9FB4 /* LoginViewController.swift in Sources */,
 				40D30FB82039887E00BC9FB4 /* AllKudosViewController.swift in Sources */,
+				404B16D120399F1A003B0CFC /* Kudos.swift in Sources */,
 				40E46D142038AEBD0013B15C /* ViewController.swift in Sources */,
 				40E46D122038AEBD0013B15C /* AppDelegate.swift in Sources */,
 			);
