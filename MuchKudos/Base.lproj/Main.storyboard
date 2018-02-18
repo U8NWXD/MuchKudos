@@ -34,6 +34,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLu-7b-rcR">
                                 <rect key="frame" x="25" y="226" width="325" height="30"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                 <connections>
                                     <action selector="login_password:" destination="9D3-K0-soE" eventType="editingDidEnd" id="jBy-4D-9Eu"/>
@@ -167,6 +168,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1382" y="-768"/>
+        </scene>
+        <!--All Kudos View Controller-->
+        <scene sceneID="lmK-Vw-yBL">
+            <objects>
+                <viewController id="hIW-jY-gbd" customClass="AllKudosViewController" customModule="MuchKudos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qr5-eS-8hG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Kudos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfH-Ao-XFu">
+                                <rect key="frame" x="134.5" y="45" width="106" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p8Q-UH-0uq">
+                                <rect key="frame" x="25" y="102" width="325" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p8Q-UH-0uq" firstAttribute="top" secondItem="KfH-Ao-XFu" secondAttribute="bottom" constant="25" id="GiL-zy-xc6"/>
+                            <constraint firstItem="8SL-q8-9r9" firstAttribute="trailing" secondItem="p8Q-UH-0uq" secondAttribute="trailing" constant="25" id="RBZ-3o-syX"/>
+                            <constraint firstItem="KfH-Ao-XFu" firstAttribute="top" secondItem="8SL-q8-9r9" secondAttribute="top" constant="25" id="Woc-g6-wp9"/>
+                            <constraint firstItem="KfH-Ao-XFu" firstAttribute="centerX" secondItem="Qr5-eS-8hG" secondAttribute="centerX" id="XnR-yZ-zqN"/>
+                            <constraint firstItem="8SL-q8-9r9" firstAttribute="bottom" secondItem="p8Q-UH-0uq" secondAttribute="bottom" constant="25" id="dGZ-Ts-qeo"/>
+                            <constraint firstItem="p8Q-UH-0uq" firstAttribute="leading" secondItem="8SL-q8-9r9" secondAttribute="leading" constant="25" id="ja5-GM-cVk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8SL-q8-9r9"/>
+                    </view>
+                    <connections>
+                        <outlet property="allKudos_table" destination="p8Q-UH-0uq" id="K41-HE-v6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CER-1p-Mfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2378.4000000000001" y="-768.66566716641682"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6ZW-QY-XIH">
