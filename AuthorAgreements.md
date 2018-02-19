@@ -14,7 +14,7 @@ under version 3 of the GNU Affero General Public License as
 published by the Free Software Foundation and as required by
 GitHub's Terms of Service.
 
-* [ ] U8N WXD
+* [x] U8N WXD
 * [ ] Jacob Wagner
 * [ ] Katan Agrawal
 * [ ] Arafat Mohammed
