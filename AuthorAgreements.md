@@ -11,7 +11,7 @@ that change.
 By placing an `x` in the brackets next to my name below, I agree
 to the public release of this jointly copyrighted work (MuchKudos)
 under version 3 of the GNU Affero General Public License as
-published by the Free Software Foundation and under
+published by the Free Software Foundation and as required by
 GitHub's Terms of Service.
 
 * [ ] U8N WXD
