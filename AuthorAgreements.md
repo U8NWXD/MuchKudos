@@ -17,4 +17,4 @@ GitHub's Terms of Service.
 * [x] U8N WXD
 * [ ] Jacob Wagner
 * [ ] Katan Agrawal
-* [ ] Arafat Mohammed
+* [x] Arafat Mohammed
