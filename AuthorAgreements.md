@@ -15,6 +15,6 @@ published by the Free Software Foundation and as required by
 GitHub's Terms of Service.
 
 * [x] U8N WXD
-* [ ] Jacob Wagner
+* [x] Jacob Wagner
 * [X] Ketan Agrawal
 * [x] Arafat Mohammed
