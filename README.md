@@ -1,4 +1,5 @@
 #  MuchKudos README
+[![CLA assistant](https://cla-assistant.io/readme/badge/U8NWXD/MuchKudos)](https://cla-assistant.io/U8NWXD/MuchKudos)
 
 ## Description
 
@@ -22,6 +23,10 @@ Note that some configuration of Firebase libraries using CocoaPods may be needed
 ## Contributing
 If you would like to contribute to this project, please get in touch by opening a pull
 request or an issue. We'd love to hear what you think!
+
+You will need to sign a Contributor License Agreement (CLA), which is handled by
+cla-assistant. You will be prompted to sign when submitting a pull request. The
+CLA can also be found [here](https://gist.github.com/U8NWXD/d02c7de60d403d34d341bf0dab7f6c6e)
 
 ## Authors
 * U8N WXD: cs.temporary@icloud.com
